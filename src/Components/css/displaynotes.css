@@ -1,0 +1,27 @@
+.display_notes {
+  --auto-grid-min-size: 16rem;
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(var(--auto-grid-min-size), 1fr)
+  );
+  grid-gap: 1rem;
+}
+
+.displaynotes_item {
+  /* Misc */
+  margin-bottom: 1rem;
+
+  border: 1px solid #e0e0e0;
+  box-sizing: border-box;
+
+  border-radius: 8px;
+}
+.item_title {
+  font-weight: bold;
+  text-transform: capitalize;
+  margin: 10px;
+}
+.item_desc {
+  margin: 10px;
+}

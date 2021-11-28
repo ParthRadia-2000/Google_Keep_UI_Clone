@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto,wght@1,300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+.sidebar {
+  background-color: #fff;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 64px);
+  min-height: auto;
+  overflow: hidden;
+  padding-top: 8px;
+  transition-duration: 150ms;
+  transition-property: width, box-shadow, border-radius;
+  width: 280px;
+  z-index: 985;
+}
+.first,
+.second,
+.third,
+.fourth,
+.fifth,
+.sixth {
+  box-sizing: border-box;
+  border: 1px solid transparent;
+  border-radius: 0 25px 25px 0;
+  color: #202124;
+  display: flex;
+  align-items: center;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.25rem;
+  height: 48px;
+  overflow: hidden;
+  cursor: pointer;
+  outline: none !important;
+}
+.sidebar .first {
+  background-color: #feefc3;
+}
+svg {
+  margin: 0 12px;
+}
+.child-name {
+  padding-left: 12px;
+}
+.second:hover,
+.third:hover,
+.fourth:hover,
+.fifth:hover,
+.sixth:hover {
+  background-color: #f1f3f4;
+}
